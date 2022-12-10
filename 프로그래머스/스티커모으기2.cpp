@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+#include <list>
 using namespace std;
 
 int dp[100001];
@@ -10,9 +10,13 @@ int solution(vector<int> sticker)
 {
     int answer = 0;
     int n = sticker.size();
-
     if (n == 1)
         return sticker[0];
+
+
+    list<int> l;
+
+    l.emplace_back
 
     //Ã¹¹øÂ°²¨ ¶âÀº°æ¿ì
     dp[0] = sticker[0];
